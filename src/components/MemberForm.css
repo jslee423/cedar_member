@@ -1,0 +1,73 @@
+.form {
+    width: 4.23in;
+    background-color: white;
+    height: 2.73in;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border: .01in solid black;
+    flex: 49%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.title > h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Anton', sans-serif;
+    color: maroon;
+}
+
+.title > h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: 'Anton', sans-serif;
+    color: maroon;
+}
+
+.barcode {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    width: 65%;
+    margin-left: 0px;
+}
+
+.lineShort {
+    border-bottom: 1px solid black;
+    width: 30%;
+    margin-left: 0px;
+}
+
+.allInputs {
+    margin-left: 60px;
+}
+
+.input {
+    display: flex;
+    justify-content: flex-start;
+    height: 35px;
+}
+
+.input > p {
+    margin-bottom: 0;
+    width: 60px;
+    display: flex;
+    justify-self: flex-start;
+    font-family: 'Anton', sans-serif;
+}
+
+.please {
+    font-family: 'Anton', sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+}
