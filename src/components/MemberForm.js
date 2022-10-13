@@ -26,11 +26,11 @@ const MemberForm = ({value}) => {
                     <div className='lineShort'></div>
                 </div>
                 <div className='input'>
-                    <p>NAME:<span className='required'>*</span></p>
+                    <p>NAME:</p>
                     <div className='line'></div>
                 </div>
                 <div className='input'>
-                    <p>PHONE:<span className='required'>*</span></p>
+                    <p>PHONE:</p>
                     <div className='line'></div>
                 </div>
                 <div className='input'>
