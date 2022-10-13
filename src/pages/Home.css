@@ -17,14 +17,14 @@
     align-items: center;
 }
 
-label {
+.numInputLabel {
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 30px;
     margin-right: 20px;
 }
 
-input {
+.numInput {
     width: 60px;
     height: 30px;
 }

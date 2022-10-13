@@ -22,12 +22,12 @@ const Home = () => {
             <h1 className='homeTitle homeTitle2'>REWARD MEMBERSHIP FORMS</h1>
             <form className='homeForm' onSubmit={handleSubmit}>
                 <div className='inputs'>
-                    <label htmlFor="lastNum">LAST NUMBER:</label>
-                    <input type="number" id="lastNum" name="lastNum" />
+                    <label htmlFor="lastNum" className='numInputLabel'>LAST NUMBER:</label>
+                    <input type="number" id="lastNum" name="lastNum" className='numInput' />
                 </div>
                 <div className='inputs'>
-                    <label htmlFor="numPages">NUMBER OF PAGES:</label>
-                    <input type="number" id="numPages" name="numPages" />
+                    <label htmlFor="numPages" className='numInputLabel'>NUMBER OF PAGES:</label>
+                    <input type="number" id="numPages" name="numPages" className='numInput' />
                 </div>
                 <input type="submit" value="SUBMIT" />
             </form>
