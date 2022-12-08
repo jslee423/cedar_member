@@ -3,7 +3,7 @@
 .form {
     width: 4.23in;
     background-color: white;
-    height: 2.73in;
+    height: calc((11in / 3) - .02in);
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -45,24 +45,26 @@
 
 .line {
     border-bottom: 1px solid black;
-    width: 65%;
+    width: 75%;
     margin-left: 0px;
 }
 
 .lineShort {
     border-bottom: 1px solid black;
-    width: 30%;
+    width: 20%;
     margin-left: 0px;
 }
 
 .allInputs {
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .input {
     display: flex;
     justify-content: flex-start;
     height: 35px;
+    margin-bottom: 15px;
 }
 
 .input > p {

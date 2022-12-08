@@ -7,7 +7,7 @@ const Forms = () => {
     const numberOfPages = useSelector((state) => state.counter.numberOfPages);
 
     // const numOfPages = 10;
-    const totalRows = numberOfPages * 4;
+    const totalRows = numberOfPages * 3;
     const totalForms = totalRows * 2;
     const barcodeNums = [];
 
