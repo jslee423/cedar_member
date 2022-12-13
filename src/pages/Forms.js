@@ -3,25 +3,60 @@ import MemberForm from "../components/MemberForm";
 import './Forms.css';
 
 const Forms = () => {
-    const lastNumber = useSelector((state) => state.counter.lastNumber);
+    let lastNumber = useSelector((state) => state.counter.lastNumber);
     const numberOfPages = useSelector((state) => state.counter.numberOfPages);
+    const formsPerPage = 6;
+    const allForms = [];
+    let barCodeNums = [];
 
-    // const numOfPages = 10;
-    const totalRows = numberOfPages * 3;
-    const totalForms = totalRows * 2;
-    const barcodeNums = [];
+    const getBarCodes = () => {
+        const memberForms = [];
+        for (let j = 1; j <= formsPerPage; j++) {
+            barCodeNums.push(+lastNumber + j);
+        }
 
-    for (let i = 0; i < totalForms; i++) {
-        barcodeNums.push(Number(lastNumber)+(i+1));
-    } 
+        for (let i = 0; i < barCodeNums.length; i++) {
+            memberForms.push(<MemberForm value={barCodeNums[i]} key={barCodeNums[i]} />)
+        }
+
+        return (
+            memberForms
+        )
+    }
+
+    const resetNums = () => {
+        lastNumber = barCodeNums[barCodeNums.length-1];
+        barCodeNums = [];
+    }
+
+    const renderForms = () => {
+        for (let i = 1; i <= numberOfPages; i++) {
+            if (i < numberOfPages) {
+                allForms.push(
+                    <div className='signUpForms page-break'>
+                        {getBarCodes()}
+                    </div>
+                )
+            } else {
+                allForms.push(
+                    <div className='signUpForms'>
+                        {getBarCodes()}
+                    </div>
+                )
+            }
+            resetNums()
+        }
+
+        return (
+            allForms
+        )
+    };
 
     return (
-        <div className='signUpForms'>
-            {barcodeNums.map((num) => {
-                return <MemberForm value={num} key={num} />
-            })}
-        </div>
-    )
+        <>
+            {renderForms()}
+        </>
+    );
 }
 
-export default Forms
+export default Forms;

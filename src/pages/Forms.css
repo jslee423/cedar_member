@@ -1,11 +1,13 @@
 .signUpForms {
-    /* width: 2550px; */
     width: 8.5in;
-    /* height: 3300px; */
-    min-height: 11in;
-    background-color: blue;
+    height: 11in;
+    /* background-color: blue; */
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     text-align: center;
+}
+
+.page-break {
+    page-break-after: always;
 }
