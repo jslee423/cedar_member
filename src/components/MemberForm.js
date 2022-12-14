@@ -16,7 +16,7 @@ const MemberForm = ({value}) => {
                         width={.8}
                         height={40}
                         fontSize={7}
-                        value={"CEDAR_"+value}
+                        value={"CEDAR"+value}
                     />
                 </div>
             </div>
