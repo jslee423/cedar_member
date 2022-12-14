@@ -15,7 +15,7 @@ const MemberForm = ({value}) => {
                     <Barcode
                         width={.8}
                         height={40}
-                        fontSize={7}
+                        fontSize={10}
                         value={"CEDAR"+value}
                     />
                 </div>
